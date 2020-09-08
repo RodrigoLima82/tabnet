@@ -4,11 +4,7 @@ from scipy.sparse import csc_matrix
 import time
 from abc import abstractmethod
 from pytorch_tabnet import tab_network
-from pytorch_tabnet.multiclass_utils import unique_labels
-from sklearn.metrics import roc_auc_score, mean_squared_error, accuracy_score
-from torch.nn.utils import clip_grad_norm_
 from pytorch_tabnet.utils import (PredictDataset,
-                                  create_dataloaders,
                                   create_explain_matrix)
 from sklearn.base import BaseEstimator
 from torch.utils.data import DataLoader
